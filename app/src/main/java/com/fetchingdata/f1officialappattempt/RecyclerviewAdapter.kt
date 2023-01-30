@@ -17,6 +17,7 @@ class RecyclerviewAdapter: RecyclerView.Adapter<RecyclerviewAdapter.ViewHolder>(
         val v = LayoutInflater.from(parent.context).inflate(R.layout.dashboard_cardview_test, parent, false)
         return ViewHolder(v)
     }
+    //
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.images.setImageResource(images[position])
