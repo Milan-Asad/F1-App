@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/light_greyv2"
+    app:cardBackgroundColor="@color/light_greyv2"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="335dp"
+        android:layout_height="86dp"
+        android:background="@color/light_greyv2"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="175dp"
+            android:layout_height="32dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center|left"
+            android:text="FERRARI"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.97" />
+
+        <TextView
+            android:id="@+id/standing_number"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:text="19"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/teamstrip"
+            android:layout_width="14dp"
+            android:layout_height="93dp"
+            android:foregroundGravity="center|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="175dp"
+            android:layout_height="32dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center|left"
+            android:text="FERNANDO ALONSO"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="51dp"
+            android:layout_height="22dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center"
+            android:text="330 PTS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

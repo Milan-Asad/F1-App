@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/light_greyv2"
+    android:backgroundTint="@color/light_greyv2"
+    app:cardBackgroundColor="@color/light_greyv2"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="4dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="390dp"
+        android:layout_height="116dp"
+        android:background="@color/light_greyv2"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="388dp"
+            android:layout_height="112dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-11dp"
+            tools:layout_editor_absoluteY="-11dp">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="249dp"
+                android:layout_height="102dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center_horizontal|center_vertical"
+                android:lineSpacingExtra="-13sp"
+                android:text="SEBASTIAN VETTEL WINS INDIAN GRAND PRIX IN INTENSE THRILLER"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="102dp"
+                android:layout_centerInParent="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="131dp"
+                    android:layout_height="103dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/light_greyv2"
+                    android:backgroundTint="@color/light_greyv2"
+                    app:cardBackgroundColor="@color/light_greyv2"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp">
+
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:layout_width="131dp"
+                        android:layout_height="103dp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
